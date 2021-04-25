@@ -1,0 +1,38 @@
+
+main{
+    display: flex;
+    gap: 20px;
+}
+.choice{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+}
+.show-filter{
+    display: flex;
+}
+.sub-explorer{
+    display: none;
+}
+select { 
+    border: thin;
+    background-color: #9fa3aba8;
+    border-radius: 5px;
+    height: 25px;
+}
+input {
+    border-radius: 5px;
+    border-color: gray;
+    outline: none;
+    border-width: thin;
+    height: 22px;
+}
+.btn{
+    outline-style: none;
+    background-color: #9fa3aba8;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+    width: 70px;
+    height: 25px;
+    display: none;
+}

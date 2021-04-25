@@ -1,0 +1,39 @@
+<main>
+    <div class="choice"  *ngFor="let choice of filterChoices">
+        <input type="radio" name="filter-type" (change)="handleChange($event)"
+        [value]="choice"
+        [id]="choice">   
+        <label
+        [for]="choice"
+        [innerText]="choice"></label>
+    </div>    
+</main>
+<div class="sub-filter">
+<div class="sub-explorer"  value="Region" #regionfilter>
+<h3>Filter by Region</h3>
+<select name="region-category" id="region-category" (change)="setRegion($event)">
+    <option    *ngFor="let region of regions"
+    [value]="region"
+    [innerText]="region"></option>
+</select>
+</div>
+
+<div class="sub-explorer" #countryFilter (change)="setCountry($event)">
+<h3>Filter by Country Name</h3>
+<select name="country-name-category" id="country-category">
+    <option
+    *ngFor="let country of countries"
+    [value]="country"
+    [innerText]="country"></option>
+</select>
+</div>
+
+<div class="sub-explorer" #capitalFilter>
+    <h3>Enter Capital City</h3>
+    <input type="text" name="capital" id="capital" (keyup)="setCapital($event)">
+</div>
+
+
+
+</div>
+<button class="btn" id="search" #searchBtn (click)="searchCountries()">Search</button>

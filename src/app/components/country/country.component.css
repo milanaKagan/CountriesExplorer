@@ -1,0 +1,12 @@
+:host{
+    padding: 5px;
+    color: black;
+    background-color: rgb(232 227 227 / 88%);
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    
+}
+img{
+    width: 100px;
+    height: 80px;
+}

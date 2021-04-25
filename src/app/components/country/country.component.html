@@ -1,0 +1,13 @@
+<header>
+    <h2 [innerText]="country.name"></h2>
+ </header>
+<main>
+    <span>Capital: </span><span  [innerText]="country.capital"></span>
+    <br>
+    <span>Calling Codes: </span><span [innerText]="country.callingCodes"></span>
+    <br>
+    <span>Borders: </span><span [innerText]="country.borders"></span>
+    <br>
+    <img alt="country flag"
+    [src]="country.flag" >
+</main>

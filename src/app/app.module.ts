@@ -3,16 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { CountryComponent } from './components/country/country.component';
+import { ResultsComponent } from './components/results/results.component';
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+import { ExplorerComponent } from './components/explorer/explorer.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CountryComponent,
+    ResultsComponent,
+    ExplorerComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
